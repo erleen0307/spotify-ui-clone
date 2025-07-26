@@ -1,0 +1,18 @@
+/* Main Section Frame */
+.MainFrame {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  margin: 0 20px 0 10px;
+  padding: 20px 20px 20px 30px;
+  border-radius: 8px;
+
+  background: linear-gradient(
+    to bottom,
+    #1f1f1f 10%,
+    rgb(26, 25, 25) 100%
+  );
+
+  overflow-y: auto;
+}

@@ -1,0 +1,98 @@
+/* Title Line */
+.Headline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Title {
+  margin-left: 10px;
+}
+
+.Title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.chartSection {
+  margin-top: 15px;
+}
+
+.chartSection .showAllLink {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 38px;
+  margin-right: 45px;
+  color: #b3b3b3;
+}
+
+.chartSection .showAllLink:hover {
+  text-decoration: underline;
+}
+
+/* Main Card Grid */
+.chartsGrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Card Container */
+.chartCardWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 8px;
+  width: 180px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.chartCardWrapper:hover {
+  background-color: #4949493d;
+  transform: scale(1.05);
+}
+
+/* Card Inner Content */
+.chartCard {
+  border-radius: 8px;
+  filter: brightness(1.1);
+  text-align: center;
+}
+
+/* Image Styling */
+.chartImage {
+  height: 150px;
+  width: 150px;
+  border-radius: 8px;
+}
+
+/* Play Button */
+.playButtonChart {
+  position: absolute;
+  top: 54%;
+  left: 72%;
+    
+  height: 20px;
+  width: 20px;
+
+  background-color: #1db954;
+  color: white;
+  
+  padding: 10px;
+  border-radius: 50%;
+  
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chartCardWrapper:hover .playButtonChart {
+  opacity: 1;
+  transform: scale(1.05);
+}

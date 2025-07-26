@@ -1,0 +1,101 @@
+/* Title Line */
+.Headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.albumSection {
+    margin-top: 15px;
+}
+
+.albumSection .showAllLink {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-right: 45px;
+    color: #b3b3b3;
+}
+
+.albumSection .showAllLink:hover {
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+/* Card Components */
+
+/* Main Card Grid */
+.albumGrid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;;
+}
+
+.albumCardWrapper {
+    position: relative;
+    
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 5px;
+
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    transition: all 0.2s 0s ease-in-out;
+}
+
+.albumCardWrapper:hover {
+    background-color: #4949493d;
+    transform: scale(1.05);
+}
+
+/* Play Button */
+.playButtonAlbum {
+    position: absolute;
+    top: 52%;
+    left: 70%;
+    
+    height: 20px;
+    width: 20px;
+
+    background-color: #1db954;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+.albumCardWrapper:hover .playButtonAlbum {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.albumCardWrapper .albumImage {
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.albumCardWrapper .albumName {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.albumCardWrapper .albumInfo {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.albumCardWrapper .albumName:hover,
+.albumCardWrapper .albumInfo:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

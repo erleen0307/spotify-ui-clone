@@ -1,0 +1,138 @@
+/* === Title Line === */
+.Headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.songsSection .showAllLink {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-right: 45px;
+    color: #b3b3b3;
+}
+
+.songsSection .showAllLink:hover {
+    text-decoration: underline;
+}
+
+
+/* === Card Grid === */
+.songGrid {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
+}
+
+
+/* === Song Card === */
+.songCardWrapper {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    padding: 10px;
+    border-radius: 8px;
+    
+    width: 150px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.songCardWrapper:hover {
+    background-color: #4949493d;
+    transform: scale(1.05);
+}
+
+
+/* === Song Image === */
+.songCardWrapper .songImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+
+/* === Text Styling === */
+.songCardWrapper .songName {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.songCardWrapper .songInfo {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+.songName:hover,
+.songInfo:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Play Button */
+.playButtonSong {
+    position: absolute;
+    top: 52%;
+    left: 70%;
+    
+    height: 20px;
+    width: 20px;
+
+    background-color: #1db954;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.songCardWrapper:hover .playButtonSong {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.songCardWrapper .songImage {
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.songCardWrapper .songName {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.songCardWrapper .songInfo {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.songCardWrapper .songName:hover,
+.songCardWrapper .songInfo:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+

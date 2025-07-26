@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+  /* Removed: overflow: hidden; */
+}
+
+.MainSection {
+  margin-left: 27%; /* Equal to sidebar width */
+  width: 75%;
+}

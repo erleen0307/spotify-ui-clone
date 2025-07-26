@@ -1,0 +1,120 @@
+.artistSection {
+    margin-top: 20px;
+}
+
+/* Title Line */
+.Headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.artistSection .showAllLink {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 38px;
+    margin-right: 45px;
+    color: #b3b3b3;
+}
+
+.artistSection .showAllLink:hover {
+    text-decoration: underline;
+}
+
+/* Main Card Grid */
+.artistsGrid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+/* === Artist Card Wrapper === */
+.artistCardWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.artistCardWrapper:hover {
+    background-color: #4949493d;
+    transform: scale(1.05);
+}
+
+/* === Artist Image === */
+.artistImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* === Artist Text === */
+.artistName {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.artistInfo {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+.artistName:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.artistInfo:hover {
+    cursor: pointer;
+}
+
+/* === Hover Play Button === */
+.playButtonArtist {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    
+    transform: translate(-50%, -50%) scale(0.9);
+    
+    background-color: #1db954;
+    color: white;
+    
+    padding: 12px;
+    border-radius: 50%;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.artistCardWrapper:hover .playButtonArtist {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.playButtonArtist svg {
+    height: 20px;
+    width: 20px;
+}

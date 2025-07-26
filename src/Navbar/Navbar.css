@@ -1,0 +1,141 @@
+/* Global Reset */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Navbar container styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+}
+
+
+/* Logo image */
+.spotifyLogo {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+/* Font Awesome Icon */
+.homeIcon {
+    margin-top: 8px;
+    font-size: 1.3rem;
+    margin-left: 25px;
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+}
+
+.homeIcon:hover {
+    background-color: #2e2e2e;
+    cursor: pointer;
+}
+
+.glassIcon:hover {
+    cursor: pointer;
+}
+
+/* Search Bar */
+.searchBar {
+    width: 30%;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: #1f1f1f;
+    padding: 0px 15px 0px 20px; 
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    margin-right: auto;
+}
+
+.searchBar:hover {
+    background-color: #2e2e2e;
+}
+
+.searchBar:hover .inputField {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.inputField {
+    width: 80%;
+    color: white;
+    font-size: 1rem;
+    margin-left: 12px;
+    background-color: #1f1f1f;
+    border: none;
+    padding-right: 80px;
+    margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.inputField:focus {
+  outline: none;
+  border: none;
+  box-shadow: none; /* In case any shadow appears */
+}
+
+p {
+    color: #b3b3b3;
+}
+
+.browseIcon {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+h4 {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.navbar a {
+    color: #b3b3b3;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.1s 0s ease-in;
+}
+
+.navbar a:hover {
+    color: white;
+    font-weight: 600;
+    font-size: 1.05rem; 
+}
+
+.logInBtn {
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 15px 32px 15px 32px;
+    border-radius: 30px;
+    transition: all 0.1s 0s ease-in;
+}
+
+.logInBtn:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+}
+
+.logInBtn:active {
+    background-color: rgba(255, 255, 255, 0.70);
+}

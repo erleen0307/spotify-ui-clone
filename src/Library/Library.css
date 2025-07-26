@@ -1,0 +1,168 @@
+/* Global */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* Entire Library */
+.mainLibraryFrame {
+    background-color: #1f1f1f;
+    width: 24%;
+    padding: 0 20px;
+    border-radius: 10px;
+
+    position: fixed;
+    top: 80px; /* adjust if your navbar is taller/shorter */
+    left: 0;
+    z-index: 5;
+    height: calc(100vh - 80px); /* match the top offset */
+    overflow-y: auto;
+}
+
+/* Your Library Div */
+.TitleFrame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.heading {
+    margin-right: auto;
+}
+
+.plusIcon {
+    color: #b3b3b3;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.plusIcon:hover {
+    background-color: #2e2e2e;
+    cursor: pointer;
+}
+
+/* Create Playlist Section */
+.playlistSection,
+.podcastSection {
+    background-color: #2e2e2e;
+    padding: 2px 20px 20px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.mainLibraryFrame .playlistHeading,
+.podcastHeading {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+}
+
+.mainLibraryFrame .playlistSub,
+.podcastSub {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.createPlaylistBtn,
+.browsePodcastBtn {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    height: 2rem;
+    
+    font-weight: 800;
+    font-size: 0.75rem;
+    
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.1s ease-in;
+}
+
+.createPlaylistBtn:hover,
+.browsePodcastBtn:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+    height: 2.2rem;
+    width: 48%;
+}
+
+.createPlaylistBtn:active,
+.browsePodcastBtn:active {
+    background-color: rgba(255, 255, 255, 0.70);
+}
+
+.EmptyDiv {
+    visibility: hidden;
+    height: 165px;
+}
+
+/* Footer Links */
+.linksDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+}
+
+.linksDiv a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+    padding: 8px;
+}
+
+/* Other Div */
+.Misc {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.Misc .cookieLink {
+    color: white;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.Misc .cookieLink:hover {
+    text-decoration: underline;
+    font-size: 1rem;
+    color: white;
+}
+
+.Misc .LanguageBtn {
+    display: flex;
+    justify-content: center;
+
+    background-color: #1f1f1f;
+    border: 1px solid white;
+    
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.globeIcon {
+    padding-right: 10px;
+}
+
+.LanguageBtn:hover {
+    background-color: #2e2e2e;
+}

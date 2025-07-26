@@ -1,0 +1,121 @@
+.radioSection {
+  margin-top: 15px;
+}
+
+/* Title Line */
+.Headline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.radioSection .showAllLink {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 38px;
+  margin-right: 45px;
+  color: #b3b3b3;
+}
+
+.radioSection .showAllLink:hover {
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+/* Main Card Grid */
+.radiosGrid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+/* Card Styling */
+.radioCardWrapper {
+  position: relative;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.radioCardWrapper:hover {
+  background-color: #4949493d;
+  transform: scale(1.05);
+}
+
+/* Image */
+.radioCardWrapper .radioImage {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Text */
+.radioCardWrapper .radioName {
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.radioCardWrapper .radioName:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Play Button */
+.playButtonRadio {
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    
+    height: 20px;
+    width: 20px;
+
+    background-color: #1db954;
+    color: white;
+    
+    padding: 10px;
+    border-radius: 50%;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+.radioCardWrapper:hover .playButtonRadio {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.radioCardWrapper .radioImage {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.radioCardWrapper .radioName {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.radioCardWrapper .radioInfo {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.radioCardWrapper .radioName:hover,
+.radioCardWrapper .radioInfo:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
