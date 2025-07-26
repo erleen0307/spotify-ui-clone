@@ -15,3 +15,26 @@
   margin-left: 27%; /* Equal to sidebar width */
   width: 75%;
 }
+
+/* LESS THAN 768px */
+@media (max-width:768px) {
+  .MainSection {
+    margin-left: 30%;
+  }
+}
+
+/* BW 768px AND 992px */
+@media (max-width:992px) and (min-width:768px) {
+  .MainSection {
+  margin-left: 30%; /* Equal to sidebar width */
+  width: 75%;
+  }
+}
+
+/* BW 992px AND 1400px */
+@media (min-width:992px) and (max-width: 1400px) {
+  .MainSection {
+  margin-left: 28%; /* Equal to sidebar width */
+  width: 75%;
+  }
+}
