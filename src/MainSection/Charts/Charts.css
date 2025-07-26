@@ -96,3 +96,46 @@
   opacity: 1;
   transform: scale(1.05);
 }
+
+/* Responsive Fade Effect */
+.chartsGrid {
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    position: relative;
+    padding-right: 40px; /* spacing for fade */
+}
+
+.chartsGrid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+/* Fade Overlay on Right Edge */
+.chartsGrid::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60px;
+    background: linear-gradient(to right, transparent, #121212b4); /* match bg color */
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Make song cards shrink slightly on smaller screens */
+@media (max-width: 768px) {
+    .chartCardWrapper {
+        width: 130px;
+    }
+
+    .chartCardWrapper .chartImage {
+        width: 130px;
+        height: 130px;
+    }
+
+    .chartCardWrapper .chartName {
+        font-size: 0.95rem;
+    }
+}
+
