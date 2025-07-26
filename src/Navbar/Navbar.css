@@ -102,14 +102,25 @@ h4 {
     margin-right: 3px;
 }
 
+.BigResp, .SmallResp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar a {
     color: #b3b3b3;
     text-decoration: none;
+    text-align: center;
+
     margin-left: 10px;
     margin-right: 10px;
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 600;
+
     transition: all 0.1s 0s ease-in;
 }
 
@@ -138,4 +149,30 @@ h4 {
 
 .logInBtn:active {
     background-color: rgba(255, 255, 255, 0.70);
+}
+
+/* LESS THAN 768px */
+@media (max-width: 768px) {
+    .BigResp {
+        display: none;
+    }
+
+    .installIcon {
+        display: none;
+    }
+
+    .logInBtn {
+        padding: 10px 25px 10px 25px;
+    }
+}
+
+/* BW 768px and 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+    .installIcon {
+        display: none;
+    }
+
+    .logInBtn {
+        padding: 10px 25px 10px 25px;
+    }
 }
