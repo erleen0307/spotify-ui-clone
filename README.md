@@ -9,7 +9,7 @@ Bringing music vibes to the browser, one div at a time 🎶
 
 ## 📸 Preview
 
-![Spotify UI Clone Screenshot](link here)
+![Spotify UI Clone Screenshot](Spotify-clone-full-page.png)
 
 ---
 
@@ -110,4 +110,3 @@ Feedback and DMs are always welcome 😄
 
 Made with ❤️ and React
 
-```
