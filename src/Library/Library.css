@@ -8,7 +8,7 @@
 .mainLibraryFrame {
     background-color: #1f1f1f;
     width: 24%;
-    padding: 0 20px;
+    padding: 10px 20px;
     border-radius: 10px;
 
     position: fixed;
@@ -72,6 +72,8 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
     width: 45%;
     height: 2rem;
     
@@ -165,4 +167,65 @@
 
 .LanguageBtn:hover {
     background-color: #2e2e2e;
+}
+
+/* LESS THAN 768px */
+@media (max-width:768px) {
+    .EmptyDiv {
+        height: 20px;
+    }
+
+    .createPlaylistBtn,
+    .browsePodcastBtn {
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .createPlaylistBtn:hover,
+    .browsePodcastBtn:hover {
+        width: 95%;
+        font-size: 10px;
+    }
+}
+
+/* BW 768px AND 992px */
+@media (max-width:992px) and (min-width:768px) {
+    .mainLibraryFrame {
+        margin-left: 5px;
+    }
+
+    .EmptyDiv {
+        height: 40px;
+    }
+
+    .createPlaylistBtn,
+    .browsePodcastBtn {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .createPlaylistBtn:hover,
+    .browsePodcastBtn:hover {
+        width: 95%;
+        font-size: 12px;
+    }
+}
+
+/* BW 992px AND 1400px */
+@media (min-width: 992px) and (max-width: 1400px) {
+    .EmptyDiv {
+        height: 100px;
+    }
+
+    .createPlaylistBtn,
+    .browsePodcastBtn {
+        width: 65%;
+        font-size: 12px;
+    }
+
+    .createPlaylistBtn:hover,
+    .browsePodcastBtn:hover {
+        width: 70%;
+        font-size: 12px;
+    }
 }
