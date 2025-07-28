@@ -87,7 +87,7 @@ npm run deploy
 
 ## 🚧 Project Status
 
-* ✅ Currently working on adding responsiveness
+* ✅ All done!
 * ❌ No backend or login/authentication (UI only)
 
 ---
