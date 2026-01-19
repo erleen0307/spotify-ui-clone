@@ -104,9 +104,6 @@ Feedback and DMs are always welcome 😄
 
 ## 📌 Author
 
-**Erleen**
-[GitHub Profile](https://github.com/erleen0307)
-[Instagram Profile](https://www.instagram.com/codeandcanvas.dev/)
-
-Made with ❤️ and React
+### 📅 Date Completed: July 25, 2025
+Made by Erleen with ❤️ 
 
