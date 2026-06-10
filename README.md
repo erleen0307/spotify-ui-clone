@@ -105,5 +105,5 @@ Feedback and DMs are always welcome 😄
 ## 📌 Author
 
 ### 📅 Date Completed: July 25, 2025
-Made by Erleen with ❤️ 
+### With ❤️ by [@erleen0307](https://github.com/erleen0307/)
 
